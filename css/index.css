@@ -81,8 +81,8 @@ header .btn {
   background-color: #535780;
   color: #edf2f4;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -91,6 +91,9 @@ header .btn:hover {
 }
 footer {
   text-align: center;
+}
+footer a {
+  margin: 0 2%;
 }
 main h3 ~ p {
   margin: 0;
