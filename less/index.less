@@ -1,4 +1,58 @@
 @import "variables";
 @import "mixins";
-@import "reset";
 @import "global";
+header, footer {
+  background: @darkblue;
+  color: @lightblue;
+  .profile-img {
+    border-radius: 50%;
+  }
+}
+header {
+  h1, h2{
+    color: @bluewhite;
+  }
+  nav{
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 15px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  .btn{
+    .button();
+  }
+}
+footer {
+  text-align: center;
+}
+main {
+  h3 ~ p{
+    margin: 0;
+  }
+  .work{
+    background: @bluewhite;
+    .job-description{
+      margin-bottom: 25px;
+      p:first-of-type{
+        margin-top: 0;
+      }
+    }
+  }
+  .education{
+    background: @lightblue;
+    p + h3{
+      margin-top: 30px;
+    }
+  }
+  .interests{
+    background: @mutedblue;
+  }
+  .contact-info a{
+    padding: 10px;
+    display: inline-block;
+  }
+}

@@ -1,75 +1,125 @@
 <!doctype html>
 
 <html lang="en">
+<!--Thank-you to Christina Truong for the layout recipe-->
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 
-  <title>My Resume</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 </head>
 <body>
-<main class="home">
-  <header class="social-media">
+<!--Intro-->
+<header id="about">
     <nav>
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
-  <div class="about-me">
-    <h1>Lindsey Gibert - Web Development student</h1>
-    <h2>Away from the old and into the new</h2>
-    <p>I am a plethora of general skills and knowledge dedicated to fostering cooperative and collaborative relationships across departments, furthermore I have a penchant for exemplary customer service.  In a quest for professional development and relevance I have taken up learning software development; pursuing fluency in HTML, CSS, JavaScript among other languages. </p>
-  </div>
-  <div class="interest">
-    <h1>My Hobbies/Aptitudes</h1>
-    <ul>
-      <li>Consulting Google and Alexa regarding subjects in software development</li>
-      <li>Git</li>
-      <li>Webstorm</li>
-      <li>HTML, CSS and JavaScript</li>
-      <li>Showing patience towards my PC</li>
-      <li>"Allnighters"</li>
-      <li>Pocket</li>
-      <li>Listening to articles on software development</li>
-      <li>Practicing Patience and Perseverance</li>
-    </ul>
-  </div>
-  <div class="work-history">
-    <table>
-      <thead>Work History</thead>
-      <tr>
-        <td><h3>Company</h3></td>
-        <td><h3>Title</h3></td>
-        <td><h3>What I Did</h3></td>
-      </tr>
-      <tr>
-        <td>Various temp agencies</td>
-        <td>administrative assistant</td>
-        <td>Onboarding documents for new insurance salespeople, calendar management and customer service, call center</td>
-      </tr>
-      <tr>
-        <td>Southern New Hampshire University</td>
-        <td>Transfer Credit Evaluations Specialist</td>
-        <td>credential evaluations, evaluation of prior coursework, determining degree requirements satisfied by that coursework, academic advising, admissions decision</td>
-      </tr>
-      <tr>
-        <td>Robert Half International</td>
-        <td>Tax Associate</td>
-        <td>analysis of financial statements, completion of tax forms, determination of basis, capital gains tax, amortization schedule, individual and small business taxes</td>
-      </tr>
-    </table>
-  </div>
-  <footer class="contact-information">
-    <h2>Contact</h2>
-    <p>Email: FrancesLGibert2071@outlook.com</p>
-    <p>Phone: 978-237-0448</p>
-  </footer>
+    <div class="content-wrap">
+        <img class="profile-img col-narrow" src="img/IMG_20190731_060725_187.jpg">
+        <div class="col-wide">
+            <h1>Lindsey Gibert</h1>
+            <h2>Web Developer + Student</h2>
+            <p>I am a plethora of general skills and knowledge dedicated to fostering cooperative and collaborative relationships across departments, furthermore I have a penchant for exemplary customer service.  In a quest for professional development and relevance I have taken up learning software development; pursuing fluency in HTML, CSS, JavaScript among other languages. </p>
+        </div>
+    </div>
+    <a href="resume.pdf" download class="btn download">Download PDF</a>
+</header>
+
+<main>
+    <!--Work Experience-->
+    <section id="work" class="work">
+
+        <div class="content-wrap">
+            <h2>Work Experience</h2>
+            <!--job 1-->
+            <div class="col-narrow">
+                <h3>Administrative Assistant</h3>
+                <p class="uppercase">ETeam/Robert Half Int'l</p>
+                <p>April 2018 - December 2018</p>
+            </div>
+
+            <div class="col-wide job-description">
+                <p>Onboarding documents for new insurance salespeople, calendar management and customer service, call center</p>
+            </div>
+
+            <!--job 2-->
+            <div class="col-narrow">
+                <h3>Transfer Credit Evaluations Specialist</h3>
+                <p class="uppercase">snhu</p>
+                <p>July 2014 - January 2018 </p>
+            </div>
+
+            <div class="col-wide job-description">
+                <p>credential evaluations, evaluation of prior coursework, determining degree requirements satisfied by that coursework, academic advising, admissions decision</p>
+            </div>
+
+            <!--job 3-->
+            <div class="col-narrow">
+                <h3>Tax Associate/Office Admin</h3>
+                <p class="uppercase">Robert Half International</p>
+                <p>May 2012 - April 2014</p>
+            </div>
+            <div class="col-wide job-description">
+                <p>analysis of financial statements, completion of tax forms, determination of basis, capital gains tax, amortization schedule, individual and small business taxes, general office procedures.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Education-->
+    <section id="education" class="education">
+        <div class="content-wrap">
+            <h2>Education</h2>
+            <!-- School 1 -->
+            <h3>Lambda School</h3>
+            <p>Intensive Coding bootcamp - Full Stack Web Development & Computer Science</p>
+            <p>14 month part time program</p>
+            <!-- School 2 -->
+            <h3>Western Governors University</h3>
+            <p>Bachelor of Science</p>
+            <p>Accounting</p>
+            <!-- School 3 -->
+            <h3>Nashua Community College</h3>
+            <p>Associate of Science</p>
+            <p>Business Administration & Accounting</p>
+        </div>
+    </section>
+    <section class="interests">
+    <div id="interests" class="content-wrap">
+        <h2>Interests</h2>
+        <ul>
+            <li>Consulting Google and Alexa regarding subjects in software development</li>
+            <a href="https://git-scm.com/about"><li>Git</li></a>
+            <li>Webstorm</li>
+            <li>HTML, CSS and JavaScript</li>
+            <a href="https://getpocket.com/"><li>Pocket</li></a>
+            <li>Listening to articles on software development</li>
+            <li>Practice, Patience and Perseverance</li>
+        </ul>
+    </div>
+    </section>
 </main>
+
+<footer id="contact">
+    <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+        <div class="contact-info">
+            <a href="mailto:FrancesLGibert2071@outlook.com">FrancesLGibert2071@outlook.com</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>Phone: 978-237-0448</p>
+    </div>
+
+</footer>
 </body>
 </html>

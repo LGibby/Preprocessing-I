@@ -1,0 +1,16 @@
+.button (@width: 125px, @height: 50px, @border-radius: 10px){
+  width: @width;
+  height: @height;
+  border-radius: @border-radius;
+  background-color: lighten(@darkblue, 20%);
+  color: @bluewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: @mutedblue;
+  }
+}
